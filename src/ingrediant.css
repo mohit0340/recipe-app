@@ -1,0 +1,122 @@
+.ingrediant{
+    background-color: rgba(255, 128, 0, 0.317) ;
+    width: 100%;
+    height: auto;
+    padding: 50px 200px;
+}
+
+
+.ingrediant-data{
+    width: 90%;
+    text-align: justify;
+}
+.ingrediant-main{
+    gap: 80px;
+    margin-left: 30px;
+    border: 1px solid black;
+    align-self: center;
+    border-radius: 5px;
+    /* background-color: rgba(222, 124, 54, 0.382); */
+    background:linear-gradient(to right, rgba(222, 124, 54, 0.382),rgba(255, 128, 0, 0.643));
+}
+
+.ingrediant-main img{
+    width: 250px;
+    height: 230px;
+ /* margin-top: 10px; */
+ margin-left: 20px;
+ align-self: center;
+    border-radius: 5px;
+    border: 1.5px solid black;
+}
+
+.mealtype{
+    margin-left:30px;
+}
+.ingrediantindetail-main{
+    /* background-color:rgba(222, 124, 54, 0.382) ; */
+    background:linear-gradient(to right, rgba(222, 124, 54, 0.382),rgba(255, 128, 0, 0.643));
+
+    border: 1px solid black;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+
+.ingrediantindetail{
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+.ingrediantindetail-data{
+    text-align: justify;
+    align-self:center;
+}
+
+
+@media screen and (max-width:414px) {
+    .ingrediant{
+        padding: 0;
+        margin: 0;
+    }
+
+    .ingrediant-main{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .ingrediant-main p{
+        text-align: center;
+    }
+    .ingrediant-main img{
+        margin: 0;
+        padding: 0;
+        margin-top: 20px; 
+        justify-self:center;
+    }
+    .ingrediant-main li{
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .ingrediantindetail-main{
+        flex-direction: column;
+        text-align: justify;
+    }
+    .ingrediantindetail-main img{
+        margin: 0;
+        padding: 0;
+        justify-self:center ;
+        margin-top: 10px;
+    }
+    .ingrediantindetail-data p{
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+    } 
+
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .ingrediant{
+        padding: 0 20px;
+        
+    }
+    .ingrediant-main{
+        padding: 0;
+        margin: 0;
+    }
+
+}

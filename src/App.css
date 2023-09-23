@@ -1,38 +1,118 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  
+}
+
+
 .App {
   text-align: center;
+  height: 260vh;
+  width: 100%;
+  background-color: rgba(255, 128, 0, 0.317);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-main{
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.serch-form{
+  display: flex;
+  justify-content: center;
+  width: max-content;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.serch-form,select{
+  padding-left:10px;
+  border: 1.5px solid black;
+  background-color: white;
+  border-radius: 5px;
+ 
+}
+ 
+.serch-form,option{
+  background-color: rgba(229, 115, 15, 0.274);
+  text-align: center;
+  text-transform:capitalize;
+
+}
+
+
+.serch-form ,input{
+/* border-radius: 8px; */
+
+  width: 220px ;
+  height: 35px;
+  border:1.5px solid black;
+  border-radius: 4px;
+  padding: 2px 5px;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  
+}
+.serch-form,button{
+/* border-radius: 8px; */
+  height: 35px;
+
+border: 1.5px solid black;
+background-color: rgba(29, 222, 129, 0.804);
+width:65px ;
+border-radius: 5px;
+}
+
+.serch-form,button:hover{
+background-color:rgba(7, 45, 26, 0.671);
+/* background-color: white;
+border: 1.5px solid rgba(29, 222, 129, 0.804); */
+ color: white;
+ /* color: rgba(29, 222, 129, 0.804);
+ border-left-color:black ; */
+ 
+}
+
+
+.app-recipe-main{
+  
+
+ /* margin: 50px 50px; */
+ margin-top: 50px;
+
+  width: 100%;
+  align-items:center;
+  justify-content:space-around;
+  display: flex;
+ 
+  
+  flex-wrap:wrap ;
+} 
+
+
+.label-option{
+  width: fit-content;
+  height:35px ;
+}
+
+
+
+@media screen and (max-width:414px) {
+  .search-main{
+    margin-top: 50px;
+    display: flex;
+  flex-wrap: wrap;  
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+  
 }
